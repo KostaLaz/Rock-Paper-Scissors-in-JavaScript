@@ -60,7 +60,9 @@ function rspFrontEnd(humanChoiceImg, BotChoiceImg, finalMessage){
 
      humanDiv.innerHTML = "<img src='" + imgDataBase[humanChoiceImg]  + "' height=150 width=300 style='box-shadow: 0px 11px 47px 14px rgba(56,42,163,0.69);'>"
      botDiv.innerHTML = "<img src='" + imgDataBase[BotChoiceImg]  + "' height=150 width=300 style='box-shadow: 0px 11px 47px 14px rgba(234,38,24,1);'>"
+     messageDiv.innerHTML = "<h1 style='color:" + finalMessage['color'] + "; + font-size: 60px; padding: 30px; '>" + finalMessage['message'] + "</h1>"
 
      document.getElementById('flex-box-rps').appendChild(humanDiv);
      document.getElementById('flex-box-rps').appendChild(botDiv);
+     document.getElementById('flex-box-rps').appendChild(messageDiv);
 }
